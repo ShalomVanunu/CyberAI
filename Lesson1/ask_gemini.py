@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = "gemini-2.5-flash"
+model = "gemini-2.5-flash" #gemma-3-4b-it
 
 client = genai.Client()
 
