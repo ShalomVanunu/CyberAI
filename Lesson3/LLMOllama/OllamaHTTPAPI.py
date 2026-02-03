@@ -1,0 +1,23 @@
+import requests
+import json
+
+
+url = "http://localhost:11434/api/chat"
+
+
+payload = {
+    "model": "gemma3",
+    "messages":[{"role":"user","content":"explain electric car one sentence"}]
+}
+
+
+response = requests.post(url, json=payload)
+
+#print(response.text)
+
+if response.status_code == 200 :
+    for line in response.iter_lines():
+        if line:
+            json_data = json.loads(line)
+            print(json_data["message"]["content"], end="")
+
