@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
-# טעינת משתני הסביבה מקובץ .env
+# טעינת משתני הסביבה מקובץ .env1
 load_dotenv()
 
 # שליפת המשתנים
