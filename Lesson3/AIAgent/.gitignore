@@ -1,3 +1,2 @@
 # Ignore the environment file
-
-../Lesson3/AIAgent/.env
+.env
